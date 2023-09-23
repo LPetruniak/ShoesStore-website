@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Titillium+Web:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+        <header>
+            <a href="#" class="logo">Sneakers<span> Store</span></a>
+            <nav>
+
+                <svg class="close" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 0C6.2 0 0 6.2 0 14C0 21.8 6.2 28 14 28C21.8 28 28 21.8 28 14C28 6.2 21.8 0 14 0ZM20.1071 20.2929C19.7166 20.6834 19.0834 20.6834 18.6929 20.2929L14.7071 16.3071C14.3166 15.9166 13.6834 15.9166 13.2929 16.3071L9.30711 20.2929C8.91658 20.6834 8.28342 20.6834 7.89289 20.2929L7.70711 20.1071C7.31658 19.7166 7.31658 19.0834 7.70711 18.6929L11.6929 14.7071C12.0834 14.3166 12.0834 13.6834 11.6929 13.2929L7.70711 9.30711C7.31658 8.91658 7.31658 8.28342 7.70711 7.89289L7.89289 7.70711C8.28342 7.31658 8.91658 7.31658 9.30711 7.70711L13.2929 11.6929C13.6834 12.0834 14.3166 12.0834 14.7071 11.6929L18.6929 7.70711C19.0834 7.31658 19.7166 7.31658 20.1071 7.70711L20.2929 7.89289C20.6834 8.28342 20.6834 8.91658 20.2929 9.30711L16.3071 13.2929C15.9166 13.6834 15.9166 14.3166 16.3071 14.7071L20.2929 18.6929C20.6834 19.0834 20.6834 19.7166 20.2929 20.1071L20.1071 20.2929Z" fill="black"/>
+                </svg>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">sneakers</a></li>
+                    <li><a href="#">Players</a></li>
+                </ul>
+
+            </nav>
+
+            <svg class="menu" width="40" height="25" viewBox="0 0 40 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" width="25" height="5" rx="2.5" fill="#D9D9D9"/>
+                <rect y="10" width="40" height="5" rx="2.5" fill="#D9D9D9"/>
+                <rect y="20" width="25" height="5" rx="2.5" fill="#D9D9D9"/>
+                </svg>
+                
+        </header>
+        <section class="hero">
+            <h1>Regain your confidance on the court</h1>
+
+            <p class="subhead">A shoe bilt with purpose and to take your game to the next level</p>
+        
+            <svg class="down-arrow" width="16" height="133" viewBox="0 0 16 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1C9 0.447715 8.55228 2.41411e-08 8 0C7.44772 -2.41411e-08 7 0.447715 7 1L9 1ZM7.29289 132.707C7.68341 133.098 8.31658 133.098 8.7071 132.707L15.0711 126.343C15.4616 125.953 15.4616 125.319 15.0711 124.929C14.6805 124.538 14.0474 124.538 13.6568 124.929L7.99999 130.586L2.34314 124.929C1.95262 124.538 1.31945 124.538 0.928927 124.929C0.538402 125.319 0.538402 125.953 0.928927 126.343L7.29289 132.707ZM7 1L6.99999 132L8.99999 132L9 1L7 1Z" fill="black"/>
+                </svg>
+        </section>
+
+        <section class="more-info">
+            <!--first banner-->
+            <div class="featured">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="sub">Upper mesh material provides proper 
+                        ventilation and reduction in the weight of the shoes.</p>
+                </div>
+                <img src="img/orange_first.jpg" alt="black shoe">     
+            </div>
+            <!--second banner-->
+            <div class="featured-left">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="sub">Upper mesh material provides proper 
+                        ventilation and reduction in the weight of the shoes.</p>
+                </div>
+                <img src="img/orange.jpg" alt="black shoe">
+            </div>
+            <!--third banner-->
+            <div class="featured">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="sub">Upper mesh material provides proper 
+                        ventilation and reduction in the weight of the shoes.</p>
+                </div>
+                <img src="img/orange_sec.jpg" alt="black shoe">
+            </div>
+        </section>
+    </div>
+
+    <!--JS-->
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+    <!--End of js-->
+</body>
+</html>
